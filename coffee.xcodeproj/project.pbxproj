@@ -14,6 +14,10 @@
 		115E8DAD1DACFC1A006FF4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115E8DAB1DACFC1A006FF4C5 /* LaunchScreen.storyboard */; };
 		115E8DB81DACFC1A006FF4C5 /* coffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E8DB71DACFC1A006FF4C5 /* coffeeTests.swift */; };
 		115E8DC31DACFC1A006FF4C5 /* coffeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E8DC21DACFC1A006FF4C5 /* coffeeUITests.swift */; };
+		115E8DD11DAD0253006FF4C5 /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E8DD01DAD0253006FF4C5 /* CoffeeTableViewCell.swift */; };
+		115E8DD31DAD05A2006FF4C5 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E8DD21DAD05A2006FF4C5 /* Coffee.swift */; };
+		119A18CB1DB50DCB003CB3ED /* coffeeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 119A18CA1DB50DCB003CB3ED /* coffeeData.plist */; };
+		119A18CE1DB511C3003CB3ED /* CoffeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A18CD1DB511C3003CB3ED /* CoffeeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		115E8DBE1DACFC1A006FF4C5 /* coffeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E8DC21DACFC1A006FF4C5 /* coffeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffeeUITests.swift; sourceTree = "<group>"; };
 		115E8DC41DACFC1A006FF4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115E8DD01DAD0253006FF4C5 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = "<group>"; };
+		115E8DD21DAD05A2006FF4C5 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		119A18CA1DB50DCB003CB3ED /* coffeeData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = coffeeData.plist; sourceTree = "<group>"; };
+		119A18CD1DB511C3003CB3ED /* CoffeeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				115E8DA21DACFC1A006FF4C5 /* AppDelegate.swift */,
-				115E8DA41DACFC1A006FF4C5 /* ViewController.swift */,
+				119A18CC1DB511A4003CB3ED /* Service */,
+				115E8DD41DAD0608006FF4C5 /* Models */,
+				115E8DD61DAD0623006FF4C5 /* Views */,
+				115E8DD51DAD061A006FF4C5 /* Controllers */,
 				115E8DA61DACFC1A006FF4C5 /* Main.storyboard */,
 				115E8DA91DACFC1A006FF4C5 /* Assets.xcassets */,
 				115E8DAB1DACFC1A006FF4C5 /* LaunchScreen.storyboard */,
 				115E8DAE1DACFC1A006FF4C5 /* Info.plist */,
+				119A18CA1DB50DCB003CB3ED /* coffeeData.plist */,
 			);
 			path = coffee;
 			sourceTree = "<group>";
@@ -123,6 +135,38 @@
 				115E8DC41DACFC1A006FF4C5 /* Info.plist */,
 			);
 			path = coffeeUITests;
+			sourceTree = "<group>";
+		};
+		115E8DD41DAD0608006FF4C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				115E8DD21DAD05A2006FF4C5 /* Coffee.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		115E8DD51DAD061A006FF4C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				115E8DA41DACFC1A006FF4C5 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		115E8DD61DAD0623006FF4C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				115E8DD01DAD0253006FF4C5 /* CoffeeTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		119A18CC1DB511A4003CB3ED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				119A18CD1DB511C3003CB3ED /* CoffeeService.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +237,7 @@
 				TargetAttributes = {
 					115E8D9E1DACFC19006FF4C5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VLX24NPY57;
 						ProvisioningStyle = Automatic;
 					};
 					115E8DB21DACFC1A006FF4C5 = {
@@ -232,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119A18CB1DB50DCB003CB3ED /* coffeeData.plist in Resources */,
 				115E8DAD1DACFC1A006FF4C5 /* LaunchScreen.storyboard in Resources */,
 				115E8DAA1DACFC1A006FF4C5 /* Assets.xcassets in Resources */,
 				115E8DA81DACFC1A006FF4C5 /* Main.storyboard in Resources */,
@@ -259,8 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115E8DD31DAD05A2006FF4C5 /* Coffee.swift in Sources */,
+				115E8DD11DAD0253006FF4C5 /* CoffeeTableViewCell.swift in Sources */,
 				115E8DA51DACFC1A006FF4C5 /* ViewController.swift in Sources */,
 				115E8DA31DACFC1A006FF4C5 /* AppDelegate.swift in Sources */,
+				119A18CE1DB511C3003CB3ED /* CoffeeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLX24NPY57;
 				INFOPLIST_FILE = coffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeta.coffee;
@@ -422,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLX24NPY57;
 				INFOPLIST_FILE = coffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeta.coffee;
@@ -503,6 +554,7 @@
 				115E8DC91DACFC1A006FF4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		115E8DCA1DACFC1A006FF4C5 /* Build configuration list for PBXNativeTarget "coffeeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +563,7 @@
 				115E8DCC1DACFC1A006FF4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		115E8DCD1DACFC1A006FF4C5 /* Build configuration list for PBXNativeTarget "coffeeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +572,7 @@
 				115E8DCF1DACFC1A006FF4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
