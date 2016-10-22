@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CoffeesViewController.swift
 //  coffee
 //
 //  Created by Zac on 11/10/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CoffeesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     let coffeeService = CoffeeService()
@@ -16,7 +16,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
 
@@ -36,14 +35,14 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate {
+extension CoffeesViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Do what you need after cell is selected
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension CoffeesViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return coffees.count

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		115E8DA31DACFC1A006FF4C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E8DA21DACFC1A006FF4C5 /* AppDelegate.swift */; };
-		115E8DA51DACFC1A006FF4C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E8DA41DACFC1A006FF4C5 /* ViewController.swift */; };
+		115E8DA51DACFC1A006FF4C5 /* CoffeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E8DA41DACFC1A006FF4C5 /* CoffeesViewController.swift */; };
 		115E8DA81DACFC1A006FF4C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115E8DA61DACFC1A006FF4C5 /* Main.storyboard */; };
 		115E8DAA1DACFC1A006FF4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E8DA91DACFC1A006FF4C5 /* Assets.xcassets */; };
 		115E8DAD1DACFC1A006FF4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115E8DAB1DACFC1A006FF4C5 /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		115E8D9F1DACFC1A006FF4C5 /* coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115E8DA21DACFC1A006FF4C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		115E8DA41DACFC1A006FF4C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		115E8DA41DACFC1A006FF4C5 /* CoffeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesViewController.swift; sourceTree = "<group>"; };
 		115E8DA71DACFC1A006FF4C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		115E8DA91DACFC1A006FF4C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115E8DAC1DACFC1A006FF4C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		115E8DD51DAD061A006FF4C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				115E8DA41DACFC1A006FF4C5 /* ViewController.swift */,
+				115E8DA41DACFC1A006FF4C5 /* CoffeesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 			files = (
 				115E8DD31DAD05A2006FF4C5 /* Coffee.swift in Sources */,
 				115E8DD11DAD0253006FF4C5 /* CoffeeTableViewCell.swift in Sources */,
-				115E8DA51DACFC1A006FF4C5 /* ViewController.swift in Sources */,
+				115E8DA51DACFC1A006FF4C5 /* CoffeesViewController.swift in Sources */,
 				115E8DA31DACFC1A006FF4C5 /* AppDelegate.swift in Sources */,
 				119A18CE1DB511C3003CB3ED /* CoffeeService.swift in Sources */,
 			);
