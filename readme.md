@@ -10,3 +10,8 @@ A detailed blog post on this topic can be view [here](https://bot-zeta.herokuapp
 
 - `swift3.0`
 - `Xcode8`
+
+## Screenshot
+<img src="ss1.png" width="220">
+<img src="ss2.png" width="220">
+<img src="ss3.png" width="220">
